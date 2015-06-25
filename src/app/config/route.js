@@ -5,12 +5,10 @@ angular
 .config(
 function($stateProvider, $urlRouterProvider) {
 $stateProvider
-  .state('/', {
-    url: 'comment',
-    //templateUrl: 'app/module/comment/comment.html',
-    //
-    templateUrl: 'app/test.html',
+  .state('comment', {
+    url: '/',
     controller: 'commentController',
+    templateUrl: 'app/module/comment/comment.html',
   });
 
 $urlRouterProvider.otherwise('/');
